@@ -1,0 +1,70 @@
+:root{   /**Variables de css, se usan con var()**/
+                                /**Paleta de colores**/
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --gris_claro: #DFE9F3;
+                                /**/
+}
+
+/******************************************************************************************************************/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;   /*Snipet para respetar el tamaño de los elementos*/
+    
+}
+
+*, *:before, *:after {  /*Snipet para respetar el tamaño de los elementos*/
+    box-sizing: inherit;
+}
+
+body{ /**Lo que se haga aqui se aplica en todos los elementos**/
+    font-size: 16px; /**para normalizar los rem  rem = 10px para adaptarlos a diferentes panatllas**/
+    font-family: 'Krub', sans-serif;
+   
+}   
+
+
+/*Definimos tamaño de la tipografia para cada h*/
+h1{
+    font-size: 3.8rem;  
+}
+
+h2{
+    font-size: 1.5rem; 
+    text-align: center; /*Alineamos al centro todos los h*/
+}
+
+/******************************************************************************************************************/
+
+/* HEADER INICIO*/
+
+.fondo {  /*para dar fondo al header de la pagina*/
+    background-size: cover;
+    height: 0rem;
+    position: relative;
+    
+}
+
+.contenido{  /*aca damos el fondo oscuro opaco que tiene el header*/
+    position: absolute;  /*para posicionar un elemento segun el contenido padre*/
+    background-color: rgba(0,0,0,.6); /*sintaxis anterior*/
+    background-color: rgb(0 0 0 / 20%); /*sintaxis nueva*/ /*tenemos dos sintaxis por temas de compatibilidad con navegadorer*/
+    width: 98.8%;
+    height: 121.8%;
+    display: flex; /*alineamos las items*/
+    flex-direction: column;
+    align-items: center; /*alineamos Verticalmente el contenido del selector*/
+    justify-content: center;/*alineamos orizontalmente el contenido del selector*/
+}
+
+.contenido h2  /*damos color al h2 y al parrafo del header*/{
+    color: var(--blanco);
+}
+
+/* HEADER FIN*/
+
+
+
+
+
+
